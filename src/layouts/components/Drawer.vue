@@ -7,7 +7,7 @@
     v-model="drawer"
     :dark="night"
   >
-    <v-list-item style="min-height: 63px">
+    <v-list-item to="/" style="min-height: 63px">
       <v-list-item-content>
         <v-list-item-title class="text-h6">
           Vuetify Template

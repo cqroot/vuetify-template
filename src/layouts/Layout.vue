@@ -1,21 +1,8 @@
 <template>
   <v-app>
-    <Sidebar> </Sidebar>
+    <Drawer> </Drawer>
 
-    <v-app-bar
-      app
-      flat
-      absolute
-      color="white"
-      style="border-bottom: 1px solid #d2d2d2 !important"
-    >
-      <v-app-bar-nav-icon @click="setSidebar(!sidebar)"></v-app-bar-nav-icon>
-
-      <v-toolbar-title
-        class="hidden-sm-and-down font-weight-light"
-        v-text="$route.name"
-      />
-    </v-app-bar>
+    <AppBar> </AppBar>
 
     <v-main>
       <div class="main-container">
@@ -26,18 +13,13 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
-import Sidebar from "./components/Sidebar.vue";
+import Drawer from "./components/Drawer.vue";
+import AppBar from "./components/AppBar.vue";
 
 export default {
   components: {
-    Sidebar,
-  },
-  computed: {
-    ...mapState(["sidebar"]),
-  },
-  methods: {
-    ...mapMutations(["setSidebar"]),
+    Drawer,
+    AppBar,
   },
 };
 </script>

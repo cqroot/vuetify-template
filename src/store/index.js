@@ -5,11 +5,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    sidebar: null,
+    drawer: null,
+    night: false,
   },
   mutations: {
-    setSidebar(state, payload) {
-      state.sidebar = payload;
+    setDrawer(state, payload) {
+      state.drawer = payload;
+    },
+    setNight(state, payload) {
+      state.night = payload;
     },
   },
   actions: {},

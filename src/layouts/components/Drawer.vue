@@ -4,7 +4,8 @@
     width="260"
     disable-resize-watcher
     class="app-navigation-menu"
-    v-model="sidebar"
+    v-model="drawer"
+    :dark="night"
   >
     <v-list-item style="min-height: 63px">
       <v-list-item-content>
@@ -41,12 +42,20 @@ export default {
     };
   },
   computed: {
-    sidebar: {
+    drawer: {
       get() {
-        return this.$store.state.sidebar;
+        return this.$store.state.drawer;
       },
       set(val) {
-        this.$store.commit("setSidebar", val);
+        this.$store.commit("setDrawer", val);
+      },
+    },
+    night: {
+      get() {
+        return this.$store.state.night;
+      },
+      set(val) {
+        this.$store.commit("setNight", val);
       },
     },
   },

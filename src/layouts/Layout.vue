@@ -5,7 +5,7 @@
     <AppBar> </AppBar>
 
     <v-main>
-      <div class="main-container">
+      <div style="margin: 20px">
         <slot> </slot>
       </div>
     </v-main>
@@ -24,10 +24,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.main-container {
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-}
-</style>
+<style lang="scss" scoped></style>

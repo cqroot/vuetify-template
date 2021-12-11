@@ -18,6 +18,14 @@
       <v-icon v-if="night">mdi-weather-night</v-icon>
       <v-icon v-else>mdi-weather-sunny</v-icon>
     </v-btn>
+
+    <v-btn
+      icon
+      href="https://github.com/cqroot/vuetify-template"
+      target="_blank"
+    >
+      <v-icon>mdi-github</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 

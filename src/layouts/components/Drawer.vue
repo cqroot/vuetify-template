@@ -9,7 +9,7 @@
   >
     <v-list-item to="/" style="min-height: 63px">
       <v-list-item-content>
-        <v-list-item-title class="text-h6">
+        <v-list-item-title class="text-h6 text-center">
           Vuetify Template
         </v-list-item-title>
       </v-list-item-content>

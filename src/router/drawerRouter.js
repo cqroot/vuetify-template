@@ -6,6 +6,12 @@ const drawerRouter = [
     meta: { icon: "mdi-view-dashboard" },
   },
   {
+    path: "/message",
+    name: "Message",
+    component: () => import("@/views/Message.vue"),
+    meta: { icon: "mdi-message" },
+  },
+  {
     path: "/about",
     name: "About",
     component: () => import("@/views/About.vue"),
